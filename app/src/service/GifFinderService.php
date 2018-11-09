@@ -13,6 +13,12 @@ class GifFinderService
         $this->gifRepository = $gifRepository;
     }
 
+    /**
+     * Returns a formatted array of gif models
+     *
+     * @param $keyword
+     * @return array
+     */
     public function find($keyword) : array
     {
         $data = [];

@@ -8,6 +8,8 @@ class GifRepository
 {
 
     /**
+     * Searches for gifs based on a title
+     *
      * @param string $keyword
      * @return GifModel[]
      */
@@ -28,7 +30,7 @@ class GifRepository
      * @return array
      * @throws \Exception
      */
-    private function getMockGifs()
+    private function getMockGifs() : array
     {
         try {
             return [
