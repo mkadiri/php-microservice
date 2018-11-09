@@ -11,3 +11,4 @@ services:
           - 443:443
         volumes:
           - ./app:/var/www/html
+          - /var/www/html/vendor
