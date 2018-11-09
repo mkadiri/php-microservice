@@ -1,0 +1,5 @@
+composer.lock
+supervisord.log
+supervisord.pid
+app/vendor
+.idea

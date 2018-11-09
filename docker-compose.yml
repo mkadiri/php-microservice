@@ -1,0 +1,13 @@
+version: '2'
+services:
+    php-microservice:
+        image: mkadiri/php-microservice:latest
+        container_name: php-microservice
+        environment:
+          - JWT_SECRET=MoWasHere
+          - JWT_ALGORITHM=HS256
+        ports:
+          - 80:80
+          - 443:443
+        volumes:
+          - ./app:/var/www/html
